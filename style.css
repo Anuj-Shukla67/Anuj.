@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: black;
+  color: #00bfff;
+  transition: background-color 1s;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#rgbToggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 10px 14px;
+  background: #00bfff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rgb-active {
+  animation: rgbBG 10s infinite linear;
+}
+@keyframes rgbBG {
+  0% { background-color: red; }
+  25% { background-color: green; }
+  50% { background-color: blue; }
+  75% { background-color: purple; }
+  100% { background-color: red; }
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 3px 3px 8px #13eb5b;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #15dde8;
+  margin-bottom: 10px;
+}
+
+.play-icon {
+  font-size: 2rem;
+  border: 2px solid #00bfff;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+}
+
+.quote-section {
+  margin-top: 30px;
+}
+
+.quote-section blockquote {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 20px auto;
+  max-width: 600px;
+  color: #ffffff;
+}
+
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #e3e8e9;
+  margin: 30px 0;
+}
+
+.image img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00bfff;
+}
+
+.biography {
+  margin-top: 30px;
+}
+
+.biography h2,
+.stats h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #b80989;
+}
+
+.biography p {
+  font-size: 1rem;
+  color: #16d4db;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.chart-container {
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+footer {
+  margin-top: 40px;
+  color: #87cefa;
+  font-size: 0.9rem;
+}
